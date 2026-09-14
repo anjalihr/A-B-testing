@@ -41,7 +41,7 @@ Data was loaded into a live PostgreSQL database (hosted on Neon) rather than kep
 
 - **`cookie_cats.csv`** — the raw dataset as downloaded from Kaggle: one row per player (`userid`), their assigned variant (`version`: gate_30/gate_40), rounds played, and retention flags. Unmodified.
 - **`variant_summary.csv`** — the cleaned, aggregated output of the analysis: one row per variant with user counts, retention rates, and average/median rounds played. This is what feeds the Tableau dashboard.
-- **`cookie_cats_analysis.ipynb`** — the full analysis notebook, run in Google Colab. Contains, in order: loading the CSV, pushing it to PostgreSQL, SQL queries (row counts, duplicate check), data cleaning (dedup + IQR-based outlier removal), the SRM (Sample Ratio Mismatch) check, metric computation by variant, the significance tests (two-proportion z-test for retention, Mann-Whitney U for rounds played), and a retrospective statistical power / minimum-detectable-effect calculation.
+- **`cookie_cats_analysis.ipynb`** — the full analysis notebook, run in Google Colab. Contains, in order: loading the CSV, pushing it to PostgreSQL, SQL queries (row counts, duplicate check), data cleaning (dedup + IQR-based outlier removal), the SRM (Sample Ratio Mismatch) check, metric computation by variant, the significance tests (two-proportion z-test for retention, Mann-Whitney U for rounds played), and a retrospective statistical power / minimum-detectable-effect calculation, a Retention comparison bar chart and a "rounds played" distribution showing the skew visually.
 
 ## Tools Used
 
