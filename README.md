@@ -8,7 +8,7 @@ Cookie Cats is a mobile puzzle game with "gates" — walls that pause a player's
 
 This project answers one question with actual statistical rigor rather than eyeballing percentages: **should the gate be moved to level 40, or stay at level 30?**
 
-Cookie Cats A_B Test_ Gate 30 vs Gate 40.png
+![alt text](<Cookie Cats A_B Test_ Gate 30 vs Gate 40.png>)
 
 ## Metrics — and why these specifically
 
