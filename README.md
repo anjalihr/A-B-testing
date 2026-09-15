@@ -38,7 +38,6 @@ Kaggle CSV → pandas (clean: dedupe, outlier removal) → PostgreSQL on Neon (r
 - **`cookie_cats_clean_full.csv`** — the cleaned, row-level dataset (duplicates removed, extreme outlier removed) after processing in pandas. Feeds the distribution chart in the dashboard.
 - **`variant_summary.csv`** — the aggregated output: one row per variant with user counts, retention rates, and average/median rounds played. Feeds the comparison charts in Tableau.
 - **`cookie_cats_analysis.ipynb`** — the full analysis notebook, run in Google Colab. Contains, in order: loading the CSV, pushing it to PostgreSQL, SQL queries (row counts, duplicate check), data cleaning (dedup + IQR-based outlier removal), the SRM (Sample Ratio Mismatch) check, metric computation by variant, the significance tests (two-proportion z-test for retention, Mann-Whitney U for rounds played), a retrospective statistical power / minimum-detectable-effect calculation, and matplotlib visualizations of retention and the rounds-played distribution.
-- **`README.md`** — this file.
 
 ## Tools Used
 
