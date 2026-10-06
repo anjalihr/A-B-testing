@@ -26,7 +26,6 @@ This project answers one question with actual statistical rigor rather than eyeb
 
 **Recommendation: keep the gate at level 30.** Day-1 retention and engagement show no significant difference either way. Day-7 retention — the stronger signal of long-term impact — is significantly better with the gate at 30. No metric favors moving it to 40, so there's no case for the change.
 
-Full reasoning, including why each statistical test was chosen and how the data was cleaned, is in `PROJECT_WRITEUP.md`.
 
 ## Pipeline
 
