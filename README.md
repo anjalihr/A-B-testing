@@ -41,9 +41,7 @@ Data was loaded into a live PostgreSQL database (hosted on Neon) for the cleanin
 - **`cookie_cats.csv`** — the raw dataset as downloaded from Kaggle: one row per player (`userid`), their assigned variant (`version`: gate_30/gate_40), rounds played, and retention flags. Unmodified.
 - **`cookie_cats_clean_full.csv`** — the cleaned, row-level dataset (duplicates removed, extreme outlier removed) after processing in pandas. Feeds the distribution chart in the dashboard.
 - **`variant_summary.csv`** — the aggregated output: one row per variant with user counts, retention rates, and average/median rounds played. Feeds the comparison charts in Tableau.
-- **`cookie_cats_analysis.ipynb`** — the full analysis notebook, run in Google Colab. Contains, in order: loading the CSV, pushing it to PostgreSQL, SQL queries (row counts, duplicate check), data cleaning (dedup + IQR-based outlier removal), the SRM (Sample Ratio Mismatch) check, metric computation by variant, the significance tests (two-proportion z-test for retention, Mann-Whitney U for rounds played), a retrospective statistical power / minimum-detectable-effect calculation, and matplotlib visualizations of retention and the rounds-played distribution.
-- **`README.md`** — this file.
-- **`PROJECT_WRITEUP.md`** — the detailed narrative: every decision made and why (e.g. why IQR outlier removal, why Mann-Whitney instead of a t-test, why the SRM result wasn't treated as disqualifying), plus limitations of the analysis.
+- **`cookie_cats_ab_test.ipynb`** — the full analysis notebook, run in Google Colab. Contains, in order: loading the CSV, pushing it to PostgreSQL, SQL queries (row counts, duplicate check), data cleaning (dedup + IQR-based outlier removal), the SRM (Sample Ratio Mismatch) check, metric computation by variant, the significance tests (two-proportion z-test for retention, Mann-Whitney U for rounds played), a retrospective statistical power / minimum-detectable-effect calculation, and matplotlib visualizations of retention and the rounds-played distribution.
 
 ## Tools Used
 
